@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-RUN cat << EOF > /etc/apk/repositories
+RUN cat <<EOF > /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/v$(cut -d'.' -f1,2 /etc/alpine-release)/main/
 https://dl-cdn.alpinelinux.org/alpine/v$(cut -d'.' -f1,2 /etc/alpine-release)/community/
 https://dl-cdn.alpinelinux.org/alpine/edge/testing/
