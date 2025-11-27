@@ -7,6 +7,7 @@ Check the `Dockerfile` to see all that's installed, some highlights:
 - helm
 - flux
 - stern
+- clusterctl
 - jq and yq
 
 It also supports `kubectl` and `helm` plugins and comes preconfigured with:
