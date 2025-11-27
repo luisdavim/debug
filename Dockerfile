@@ -51,4 +51,4 @@ RUN kubectl krew update && \
 RUN helm plugin install https://github.com/databus23/helm-diff && rm -rf /tmp/helm-* && \
   rm -rf ~/.cache/helm/plugins/https-github.com-databus23-helm-diff/.git
 
-ENTRYPOINT bash
+ENTRYPOINT ["bash"]
