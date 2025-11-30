@@ -22,6 +22,8 @@ A pre-built docker image is available in the packages page:
 docker pull ghcr.io/luisdavim/debug:main
 ```
 
+This image is rebuilt weekly to enssure packages are kept up-to-date.
+
 ## Example usage
 
 To debug a kubernetes node:
