@@ -45,8 +45,8 @@ ENV PATH="${KREW_ROOT:-/root/.krew}/bin:$PATH"
 
 # Install krew plugins
 RUN kubectl krew update && \
-  kubectl krew install tree \
-  kubectl krew install rolesum \
+  kubectl krew install tree && \
+  kubectl krew install rolesum && \
   kubectl krew install view-secret
 
 # Install helm plugins
