@@ -17,9 +17,9 @@ RUN apk update && \
   # certificates
   ca-certificates openssl \
   # processes/io
-  htop atop strace iotop sysstat ltrace ncdu logrotate hdparm pciutils psmisc tree pv \
+  htop atop strace fio iotop sysstat ltrace ncdu logrotate hdparm pciutils psmisc tree pv \
   # kubernetes
-  kubectl helm stern flux \
+  kubectl etcd-ctl helm stern flux \
   # cloud
   govc
 
