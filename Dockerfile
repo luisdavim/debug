@@ -11,7 +11,7 @@ RUN apk update && \
   # base
   coreutils findutils \
   # build/code
-  build-base git go bash bash-completion ncurses vim tmux jq yq \
+  build-base git go bash bash-completion ncurses neovim tmux jq yq \
   # network
   bind-tools iputils tcpdump curl nmap tcpflow iftop net-tools mtr netcat-openbsd bridge-utils iperf ngrep \
   # certificates
@@ -22,6 +22,9 @@ RUN apk update && \
   kubectl etcd-ctl helm stern flux \
   # cloud
   govc
+
+RUN echo 'alias vim="nvim"' >> ~/.bashrc && \
+  echo 'alias vi="nvim"' >> ~/.bashrc
 
 # Install clusterctl
 RUN curl -L https://github.com/kubernetes-sigs/cluster-api/releases/latest/download/clusterctl-linux-$(uname -m) -o clusterctl && \
