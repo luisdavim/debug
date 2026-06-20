@@ -35,5 +35,5 @@ kubectl -n default debug node/management-7c5738e6d2-shbcp-5t947 -it --image=ghcr
 To start a debug pod:
 
 ```sh
-kubectl run -n default --restart=Never --rm -i --tty debug --image=ghcr.io/luisdavim/debug:main -- bash
+kubectl run -n default --restart=Never --rm -i --tty debug --image=ghcr.io/luisdavim/debug:main
 ```
